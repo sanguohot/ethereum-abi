@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"strings"
 
+	"bytes"
+	"encoding/json"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/pkg/errors"
 	"github.com/ethereum/go-ethereum/core/types"
-	"encoding/json"
-	"bytes"
+	"github.com/pkg/errors"
 )
 
 type decodedArgument struct {

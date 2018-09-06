@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/urfave/cli"
-	"github.com/sanguohot/ethereum-abi/abi"
-	"log"
 	"fmt"
+	"github.com/sanguohot/ethereum-abi/abi"
+	"github.com/urfave/cli"
+	"log"
 	"os"
 	"time"
 )

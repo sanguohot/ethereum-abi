@@ -1,11 +1,11 @@
 package abi
 
 import (
-	"github.com/urfave/cli"
+	"encoding/hex"
 	"errors"
 	"fmt"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"encoding/hex"
+	"github.com/urfave/cli"
 )
 
 func getEncodeDataJson(c *cli.Context) (error, string) {

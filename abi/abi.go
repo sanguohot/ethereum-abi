@@ -1,11 +1,10 @@
 package abi
 
 import (
-	"io/ioutil"
-	"fmt"
-	"os"
-	"github.com/urfave/cli"
 	"errors"
+	"github.com/urfave/cli"
+	"io/ioutil"
+	"os"
 	"path"
 )
 
@@ -49,27 +48,20 @@ func getAbiJson(c *cli.Context) (error, string) {
 	return nil, abiJsonString
 }
 var AbiCommands  = &[]cli.Command {
+	//{
+	//	Name:  "encode",
+	//	Aliases:     []string{"e", "en"},
+	//	Usage: "encode the solidity's method and params from terminal input",
+	//	Action: func(c *cli.Context) error {
+	//		fmt.Println("new task template: ", c.Args().First())
+	//		return nil
+	//	},
+	//},
 	{
-		Name:        "abi",
-		Usage:       "solidity abi management",
-		Flags: 		 abiFlags,
-		Subcommands: []cli.Command{
-			{
-				Name:  "encode",
-				Aliases:     []string{"e", "en"},
-				Usage: "encode the solidity's method and params from terminal input",
-				Action: func(c *cli.Context) error {
-					fmt.Println("new task template: ", c.Args().First())
-					return nil
-				},
-			},
-			{
-				Name:  "decode",
-				Aliases:     []string{"d", "de"},
-				Usage: "decode the solidity's method and params from json",
-				Action: decode,
-			},
-		},
+		Name:  "decode",
+		Aliases:     []string{"d", "de"},
+		Usage: "decode the solidity's method and params from json",
+		Action: decode,
 	},
 }
 
