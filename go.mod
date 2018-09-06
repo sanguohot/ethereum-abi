@@ -9,3 +9,5 @@ require (
 	github.com/urfave/cli v1.20.0
 	gopkg.in/karalabe/cookiejar.v2 v2.0.0-20150724131613-8dcd6a7f4951 // indirect
 )
+
+replace github.com/ethereum/go-ethereum v1.8.15 => github.com/sanguohot/go-ethereum v1.8.14-0.20180905013405-eb10ed570864
