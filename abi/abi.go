@@ -30,9 +30,9 @@ func getAbiJson(c *cli.Context) (error, string) {
 		abiJsonString = c.String("abi-json")
 	}else if c.String("abi-file") != "" {
 		abiFilePath = c.String("abi-file")
-	}else if os.Getenv("abi-file") != "" {
+	}else if os.Getenv("ABI_FILE") != "" {
 		// abi-json to os env is too big, only support file path
-		abiFilePath = os.Getenv("abi-file")
+		abiFilePath = os.Getenv("ABI_FILE")
 	}
 	if abiFilePath != "" {
 		//abiFilePath = "E:/evan/goland/src/medichain/contracts/medi/build/EasyCns.abi"
