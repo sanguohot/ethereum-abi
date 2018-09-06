@@ -13,7 +13,7 @@ func InitApp() error {
 	app := cli.NewApp()
 	app.Name = "ethereum-abi"
 	app.Usage = "command line for ethereum-abi!"
-	app.Version = "1.0.1"
+	app.Version = "1.0.0"
 	app.Compiled = time.Now()
 	app.Flags = abi.AbiFlags
 	app.Authors = []cli.Author{
