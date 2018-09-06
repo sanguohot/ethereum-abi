@@ -8,7 +8,7 @@ import (
 	"path"
 )
 
-var abiFlags = []cli.Flag{
+var AbiFlags = []cli.Flag{
 	cli.StringFlag{
 		Name: "abi-json",
 		Value: "",

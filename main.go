@@ -15,6 +15,7 @@ func InitApp() error {
 	app.Usage = "command line for ethereum-abi!"
 	app.Version = "1.0.1"
 	app.Compiled = time.Now()
+	app.Flags = abi.AbiFlags
 	app.Authors = []cli.Author{
 		cli.Author{
 			Name:  "Sanguohot",
