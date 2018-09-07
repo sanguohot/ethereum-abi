@@ -1,6 +1,7 @@
 module github.com/sanguohot/ethereum-abi
 
 require (
+	github.com/btcsuite/btcd v0.0.0-20180903232927-cff30e1d23fc // indirect
 	github.com/ethereum/go-ethereum v1.8.15
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/golang/snappy v0.0.0-20180518054509-2e65f85255db // indirect
